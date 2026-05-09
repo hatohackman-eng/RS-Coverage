@@ -1,11 +1,20 @@
-<div align="center">
+# RS Coverage Analyzer
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A simple, powerful web application for analyzing hospital coverage radius, detecting overlaps, and finding gap areas.
 
-  <h1>Built with AI Studio</h2>
+## Features
+- **Interactive Map**: Built with Leaflet.js and OpenStreetMap.
+- **Geospatial Analysis**: Real-time calculations using Turf.js.
+- **Runes Powered**: Built with Svelte 5 for reactive, high-performance UI.
+- **Offline First**: Uses localforage (IndexedDB) and PWA support.
+- **Import/Export**: Support for GeoJSON/JSON data.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Getting Started
+1. Run `npm install`
+2. Run `npm run dev`
+3. Open `http://localhost:3000`
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
-
-</div>
+## Analysis Logic
+- **Union**: Calculates the combined reach of all selected hospitals.
+- **Gaps**: Identifies areas within a 5km buffer of your hospital network that are currently unserved.
+- **Population Estimate**: Uses a configurable density factor to estimate how many families are within the coverage area.

@@ -1,0 +1,12 @@
+{
+  "name": "RS Coverage Analyzer",
+  "description": "Hospital coverage radius analysis tool using Leaflet and Turf.js. Analyze gaps and overlaps in healthcare facility distribution.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "geospatial analysis",
+    "mapping",
+    "offline storage"
+  ]
+}
